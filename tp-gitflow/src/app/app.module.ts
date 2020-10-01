@@ -11,7 +11,7 @@ import { MenuComponent } from './menu/menu.component';
   declarations: [
     AppComponent,
     PersonnageComponent,
-    Personnage2component,
+    Personnage2Component,
     MenuComponent
   ],
   imports: [
