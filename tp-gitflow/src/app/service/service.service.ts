@@ -6,7 +6,9 @@ import { Subject } from 'rxjs';
 })
 export class Service {
   busAttaque : Subject<number> = new Subject<number>();
+  busAttaque2 :  Subject<number> = new Subject<number>();
   constructor() { }
+
   
   publierAttaque(degats:number) {
     return this.busAttaque.next(degats);
@@ -14,5 +16,13 @@ export class Service {
 
   abonnerAttaque(){
     return this.busAttaque.asObservable();
+  }
+
+  publierAttaque2(degats:number) {
+    return this.busAttaque2.next(degats);
+  }
+
+  abonnerAttaque2(){
+    return this.busAttaque2.asObservable();
   }
 }
